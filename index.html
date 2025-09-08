@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subang Commons — Crypto & Commons Co‑living in Subang Jaya</title>
+  <meta name="description" content="Subang Commons is a community co‑living & house for crypto builders and commons‑minded travelers in Subang Jaya (Kuala Lumpur). Short and long stays available." />
+  <meta property="og:title" content="Subang Commons — Crypto & Commons Co‑living" />
+  <meta property="og:description" content="Short & monthly stays for crypto folks and commons‑builders in Subang Jaya." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://subangcommons.example" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #E7E8D1;           /* base: warm light olive */
+      --muted: #6F6B5F;        /* warm gray for secondary text */
+      --text: #2E2A26;         /* soft charcoal */
+      --accent: #B85042;       /* terracotta */
+      --accent2: #A7BEAE;      /* sage */
+      --card: #FFFFFF;         /* cards */
+      --border: #DADCC9;       /* light border derived from bg */
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; border-radius: 14px; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header { padding: 24px 0; border-bottom: 1px solid var(--border); position: static; background: transparent; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.2px; }
+    /* brand-badge removed */
+    nav { margin-left: auto; display: flex; gap: 22px; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 28px; }
+    @media (min-width: 880px) { .row.two { grid-template-columns: 1.1fr 0.9fr; align-items: start; } }
+    .hero { padding: 48px 0 28px; }
+    .hero h1 { font-family: 'Noto Serif JP', Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.12; margin: 12px 0 10px; letter-spacing: .2px; }
+    .eyebrow { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .lead { font-size: clamp(16px, 2.1vw, 20px); color: #6f665a; margin: 12px 0 24px; }
+    .cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 700; box-shadow: none; border: 1px solid rgba(0,0,0,.04); }
+    .cta:hover { transform: translateY(-1px); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+    .pricing { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 14px; }
+    @media (min-width: 720px) { .pricing { grid-template-columns: repeat(3, 1fr); } }
+    .price { display:flex; flex-direction:column; gap: 6px; }
+    .price .big { font-size: 28px; font-weight: 800; }
+    .muted { color: var(--muted); }
+    section { padding: 40px 0; }
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 860px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+    iframe.map { width: 100%; min-height: 360px; border: 0; border-radius: 16px; }
+    footer { border-top: 1px solid var(--border); padding: 26px 0 44px; color: var(--muted); font-size: 14px; }
+    .pill { display:inline-block; border:1px solid var(--border); background:#F4EEE4; padding:6px 10px; border-radius:999px; font-size:12px; color:#786c5e; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center; justify-content:flex-start; gap:16px;">
+      <div class="brand" style="font-family: 'Noto Serif JP', Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-weight:600; font-size:18px; letter-spacing:.2px;">Subang Commons</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero row two" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">Crypto & Commons Co‑living · House</span>
+        <h1 id="hero-title">Stay. Build. Belong.</h1>
+        <p class="lead">Subang Commons is a community‑first co‑living space in Subang Jaya (Kuala Lumpur) for crypto folks, open‑source contributors, and commons‑minded travelers. Short stays and monthly coliving available.</p>
+        <a class="cta" id="contact-cta" href="mailto:subangjaya.commons@protonmail.com?subject=Booking%20Inquiry%20-%20Subang%20Commons">Email to Book</a>
+        
+      </div>
+      <div>
+        <div class="card">
+          <div class="muted" style="font-size:13px; letter-spacing:.08em; text-transform:uppercase;">Rates</div>
+          <div class="pricing" id="rates">
+            <div class="card price" aria-label="Daily rate">
+              <div class="big">RM 90</div>
+              <div class="muted">per night</div>
+            </div>
+            <div class="card price" aria-label="Weekly rate">
+              <div class="big">RM 500</div>
+              <div class="muted">per week</div>
+            </div>
+            <div class="card price" aria-label="Monthly rate">
+              <div class="big">RM 1300</div>
+              <div class="muted">per month</div>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:10px">Monthly rate excludes utilities (metered). Daily & weekly stays include Wi‑Fi. Please confirm availability and house rules by email.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" aria-labelledby="photos-title">
+      <h2 id="photos-title" style="margin:0 0 12px; font-size:24px">Photos</h2>
+      <div class="gallery">
+        <img src="images/photo_room-bed.jpg" alt="Private bedroom at Subang Commons" />
+        <img src="images/photo_room-desk.jpg" alt="Bedroom with desk and ensuite bathroom" />
+        <img src="images/photo_common-area.jpg" alt="Tatami common area for tea & cowork" />
+      </div>
+    </section>
+
+    <section id="map" aria-labelledby="map-title">
+      <h2 id="map-title" style="margin:0 0 12px; font-size:24px">Location</h2>
+      <p class="muted">General area: Subang Jaya (SS15), Selangor, Malaysia.</p>
+      <!-- General area embed (no API key needed). If you have a precise address, replace q= with it. -->
+      <iframe class="map" loading="lazy" src="https://maps.google.com/maps?hl=en&q=SS15%20Subang%20Jaya&z=14&output=embed" title="Google Map of Subang Jaya SS15"></iframe>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="margin:0 0 12px; font-size:24px">Contact</h2>
+      <a class="cta" href="mailto:subangjaya.commons@protonmail?subject=Booking%20Inquiry%20-%20Subang%20Commons">Email to Book</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Subang Commons</div>
+      <div class="muted">Community‑first co‑living house in Subang Jaya</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
